@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Swish!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_s_call">sCall</string>
+    <string name="title_activity_s_message">sMessage</string>
+    <string name="title_activity_s_camera">sCamera</string>
+    <string name="title_activity_s_photo">sPhoto</string>
+    <string name="title_activity_s_music">sMusic</string>
+</resources>

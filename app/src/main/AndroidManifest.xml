@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bharath.swish">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.bharath.com.example.harshal.swish.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.bharath.com.example.harshal.swish.Bluetooth"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.bharath.com.example.harshal.swish.sCall"
+            android:label="@string/title_activity_s_call"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.bharath.com.example.harshal.swish.sMessage"
+            android:label="@string/title_activity_s_message"
+            android:parentActivityName="com.example.bharath.com.example.harshal.swish.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bharath.com.example.harshal.swish.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.bharath.com.example.harshal.swish.sCamera"
+            android:label="@string/title_activity_s_camera"
+            android:parentActivityName="com.example.bharath.com.example.harshal.swish.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bharath.com.example.harshal.swish.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.bharath.com.example.harshal.swish.sPhoto"
+            android:label="@string/title_activity_s_photo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.bharath.com.example.harshal.swish.sMusic"
+            android:label="@string/title_activity_s_music"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
